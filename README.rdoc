@@ -6,4 +6,4 @@ cd redis-socketio
 **rails s**
 cd realtime
 npm install
-node realtime-server.js
+**node realtime-server.js**
