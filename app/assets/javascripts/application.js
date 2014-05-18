@@ -13,8 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
-
+//= require socket.io
+////= require_tree .
 socket = io.connect("http://0.0.0.0:5001");
 socket.on("rt-change", function(message){
 	alert(message);

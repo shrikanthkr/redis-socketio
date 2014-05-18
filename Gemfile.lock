@@ -86,6 +86,8 @@ GEM
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
+    socket.io-rails (0.9.16)
+      railties (>= 3.1)
     spring (1.1.2)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -123,6 +125,7 @@ DEPENDENCIES
   redis
   sass-rails (~> 4.0.1)
   sdoc (~> 0.4.0)
+  socket.io-rails
   spring
   sqlite3
   turbolinks
