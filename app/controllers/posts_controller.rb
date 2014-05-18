@@ -29,6 +29,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       if @post.save
          $redis.publish 'rt-change', @post.to_json
+         puts "From Rails !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render action: 'show', status: :created, location: @post }
       else

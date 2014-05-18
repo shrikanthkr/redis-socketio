@@ -4,7 +4,7 @@ namespace :redis_sub do
   	puts "HEllo"
     $redis.subscribe("my_callback") do |on|
       on.message do |channel, message|
-        puts "!!!!!!!!!!!!!!!!!!!!"
+        puts "!!!!!!!!!!!!!!!!!!!!"+message.to_s
       end
     end
   end
